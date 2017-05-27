@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快易乐点餐系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style type="text/css">
+			.main{
+				position: relative;
+				overflow-y: scroll;
+			}
+			
+			.main p{
+				padding:0 0.5rem;
+				font-size: 0.875rem;
+				line-height: 1.5rem;
+				color: #3CB371;
+			}
+			.main p.foodname{
+				padding:1rem 0.5rem;
+				color: #3CB371;
+			}
+			
+			.main p.description{
+				
+				color:slategray;
+			}
+			
+			.main p.lable{
+				background-color: #EEEEEE;
+				margin: 0.5rem;
+			}
+			
+			.footer{font-size: 0.75rem;}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<span class="back">返回</span>快易乐点餐系统-菜品详情 <span class="setting"></span>
+		</div>
+		<div class="main">
+			<p class="foodname">鱼香肉丝</p>
+			<p><img src="img/0.jpg"/></p>
+			<p class="lable">价格</p>
+			<p>￥ 25 </p>
+			<p class="lable">简介</p>
+			<p class="description">
+				鱼香肉丝是一道常见川菜。N年前第一次吃这道菜的时候，吃完了我还很纳闷，明明没有鱼呀，还说什么“鱼香”！后来才知道，鱼香，是四川菜肴主要传统味型之一。成菜具有鱼香味，而其味是调味品调制而成。
+			</p>
+		</div>
+		<div class="footer">
+			<input type="button" class="btnlong" id="btnAdd" value="加入菜单" />
+		</div>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".head>span.back").click(function(){
+				location.href="login.html";
+			});
+			
+			$("#btnAdd").click(function(){
+				location.href="myfoodlist.html";
+			});
+			
+		</script>
+	</body>
+</html>

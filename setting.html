@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快易乐点餐系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style type="text/css">
+			.main{
+				position: relative;
+				overflow-y: scroll;
+			}
+			.menu{
+				padding-top: 1.5rem;
+			}
+			p.title
+			{
+				text-align: center;
+				padding-bottom:0.5rem;
+				color: #3CB371;
+			}
+			p.icon{
+				text-align: center;
+				margin: 0 0.3rem;
+				border-bottom: solid 1px #ccc;
+				font-size: 0.75rem;
+				text-align: left;
+				line-height: 1rem;
+				padding-bottom:1rem;
+				color: #3CB371;
+			}
+			
+			a{
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				color:#333;
+				border-bottom: solid 1px #eee;
+				height:2rem;
+				line-height:2rem;
+				margin: 0 0.3rem;
+				margin-top: 0.3rem;
+				text-align: left;
+				padding-left:2rem;
+				font-size: 0.75rem;
+				
+			}
+			a.icona{
+				background-image:url(img/133_11.png);
+				background-position: 0.1rem 0.15rem;
+				background-repeat: no-repeat;
+				background-size: 1.5rem 1.5rem;
+				background-color:#333;
+				color: white;
+			}
+			a.iconb{
+				background-image:url(img/133_13.png);
+				background-position: 0.1rem 0.15rem;
+				background-repeat: no-repeat;
+				background-size: 1.5rem 1.5rem;
+				background-color:#eee;
+				
+			}
+			a.iconc{
+				background-image:url(img/13_05.png);
+				background-position: 0.25rem 0.35rem;
+				background-repeat: no-repeat;
+				background-size: 1.3rem 1.3rem;
+				background-color:#3CB371;	
+				color:white;			
+			}
+			.footer{font-size: 0.75rem;}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<span class="back">返回</span>快易乐点餐系统 <span class="setting"></span>
+		</div>
+		<div class="main">
+			<div class="menu">
+				<p class="title">系统消息</p>
+				<p class="icon">
+					各位服务员请注意，今日豆腐、黄瓜、甲鱼、鳝鱼、苦瓜已经卖完。
+				</p>
+				<a href="###" class="icona" id="myorder">我的订单</a>
+				<a href="###" class="icona">报表统计</a>
+				<a href="###" class="icona">系统消息</a>
+				<a href="###" class="iconc" id="loginout">退出系统</a>
+			</div>
+			
+		</div>
+		<div class="footer">
+			技术QQ：1416759661
+		</div>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".head .back").click(function(){
+				location.href="desk.html";
+			});
+			$("#loginout").click(function(){
+				location.href="login.html";
+			});
+			$("#myorder").click(function(){
+				location.href="myorder.html";
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快易乐点餐系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style type="text/css">
+			.main{
+				position: relative;
+			}
+			.menu{
+				padding-top: 5rem;
+			}
+			p{
+				text-align: center;
+				line-height: 3rem;
+			}
+			p.icon{
+				width: 3rem;
+				height: 3rem;
+				font-size:2rem;
+				border: solid 2px mediumseagreen;
+				border-radius: 1.5rem;
+				line-height: 3rem;
+				background-color: #3CB371;
+				text-align: center;
+				color: white;
+				margin: 0 auto;
+				
+			}
+			p.msg{
+				color: #FF8C00;
+			}
+			a{
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				color: #fff;
+				background-color: mediumseagreen;
+				height:1.8rem;
+				line-height: 1.8rem;
+				margin: 0.3rem 1rem;
+				border-radius: 0.3rem;
+				
+			}
+			.footer{font-size: 0.75rem;}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			快易乐点餐系统 <span class="setting"></span>
+		</div>
+		<div class="main">
+			<div class="menu">
+				<p class="icon">✔</p>
+				<p class="msg">点餐成功</p>
+				<a href="###" id="myorder">我的订单</a>
+				<a href="###" id="foodlist">菜品一览</a>
+			</div>
+			
+		</div>
+		<div class="footer">
+			技术QQ：1416759661
+		</div>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#myorder").click(function(){
+				location.href="myorder.html";
+			});
+			$("#foodlist").click(function(){
+				location.href="foodlist.html";
+			});
+		</script>
+	</body>
+</html>

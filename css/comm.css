@@ -1,0 +1,88 @@
+
+@media screen and ( min-width: 212px){/*213px显示屏样式 LG Optimus One*/}
+@media screen and ( min-width: 319px){/*320px显示屏样式 苹果4/4S/5C/5S黑莓Z30 */
+	html{
+		font-size: 16px;
+	}
+}
+@media screen and ( min-width: 359px){/*360px显示屏样式 索尼Z1*/
+	html{
+		font-size:18px;
+	}
+}
+@media screen and ( min-width: 383px){/*384px显示屏样式 黑莓Z10 谷歌 Nexus 6 LG Optimus G*/}
+@media screen and ( min-width: 399px){/*399px显示屏样式 三星galaxyNote*/}
+@media screen and ( min-width: 414px){/*414px显示屏样式 苹果6plus*/
+	html{
+		font-size:20.7px;
+	}
+}
+@media screen and ( min-width: 423px){/*424px显示屏样式 LG 4X */}
+@media screen and ( min-width: 479px){/*480px显示屏样式 索尼MT27i Xperia sola*/}
+@media screen and ( min-width: 539px){/*640px显示屏样式 摩托罗拉Droid3/4/Razr Atrix 4g*/}
+@media screen and ( min-width: 639px){/*640px显示屏样式*/}
+@media screen and ( min-width: 640px){/*640px以上显示屏样式*/}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: "微软雅黑";
+}
+
+.head{
+	height:2rem;
+	line-height: 2rem;
+	background-color: mediumseagreen;
+	text-align: center;
+	color: white;
+	font-size:1.0625rem;
+	position: relative;
+}
+
+.head span.back{
+	position: absolute;
+	height: 2rem;
+	width:3.8rem;
+	font-size: 0.75rem;
+	left: 0;
+	cursor: pointer;
+}
+
+.head span.setting
+{
+	background-image:url(../img/13_05.png);
+	background-position: 0.25rem 0.25rem;
+	background-size:1.5rem 1.5rem;
+	background-repeat: no-repeat;
+	width: 2rem;
+	height:2rem;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.main{
+	height:calc(100% - 4rem);
+}
+.footer{
+	height:2rem;
+	line-height: 2rem;
+	background-color: mediumseagreen;
+	text-align: center;
+	color: white;
+}
+.btnlong{
+	width:100%;
+	height: 100%;
+	background-color: mediumseagreen;
+	color: white;
+	border: 0;
+	outline: none;
+}

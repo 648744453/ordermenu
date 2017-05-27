@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快易乐点餐系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style type="text/css">
+			.main{
+				position: relative;
+				color: #2E8B57;
+			}
+			.orderhead{
+				padding: 0.5rem 0.5rem;
+				line-height: 1.2rem;
+			}
+			p{
+				font-size: 0.75rem;
+			}
+			
+			ul li{
+				overflow: hidden;
+				margin: 0 0.5rem;
+				border-bottom: dashed 1px #eee;
+				font-size: 0.875rem;
+			}
+			
+			ul li span.left{
+				float: left;
+				width: 50%;
+				text-align: left;
+			}
+			
+			ul li span.right{
+				float: left;
+				width: 50%;
+				text-align: right;
+			}
+			
+			.footer{font-size: 0.75rem;}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<span class="back">返回</span>快易乐点餐系统 <span class="setting"></span>
+		</div>
+		<div class="main">
+			<div class="orderhead">
+			<p><span>订单编号：2017052301</span></p>
+			<p><span>桌号：06 </span> </p>
+			<p><span>时间：2017-05-23 11:58:00</span></p>
+			
+			</div>
+			<ul>
+				<li><span class="left">水煮肉片</span> <span class="right">18X2=36</span></li>
+				<li><span class="left">回锅肉</span> <span class="right">15X2=30</span></li>
+				<li><span class="left">青椒肉丝</span> <span class="right">16X1=16</span></li>
+				<li><span class="left">汇总</span> <span class="right">￥82</span></li>
+			</ul>
+		</div>
+		<div class="footer">
+			技术QQ：1416759661
+		</div>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#btnlogin").click(function(){
+				location.href="desk.html";
+			});
+		</script>
+	</body>
+</html>

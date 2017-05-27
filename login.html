@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>快易乐点餐系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<style type="text/css">
+			.main{
+				position: relative;
+			}
+			.login{
+				width: 100%;
+				height: 6rem;
+				position: absolute;
+				top:calc(50% - 3rem);
+			}
+			.login input{
+				width:calc(90% - 2px);
+				margin: 0 auto;
+				height:1.8rem;
+				display: block;
+				border: solid 1px #eee;
+				margin-top: 3px;
+				outline: none;
+				border-radius: 3px;
+			}
+			.login input.logininput
+			{
+				width:calc(90% - 12px);
+				padding: 0 5px;
+			}
+			#btnlogin{
+				background-color: mediumseagreen;
+				color: white;
+				border: solid 1px mediumseagreen;
+			}
+			.footer{font-size: 0.75rem;}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			快易乐点餐系统
+		</div>
+		<div class="main">
+			<div class="login">
+				<input type="text" name="username" class="logininput" placeholder="用户名"/>
+				<input type="password" name="password" class="logininput" placeholder="密    码"/>
+				<input type="button" id="btnlogin" value="登录" />
+			</div>
+			
+		</div>
+		<div class="footer">
+			技术QQ：1416759661
+		</div>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#btnlogin").click(function(){
+				location.href="desk.html";
+			});
+		</script>
+	</body>
+</html>
